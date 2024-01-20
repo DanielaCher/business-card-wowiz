@@ -21,7 +21,10 @@
   align-items: center;
   justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color:#d4fb61;
+  color:rgb(230, 280, 183);
+  background-image: url("../public/images/pistol3.jpg");  
+  background-size: cover;
+   
 }
 
 .App-link {
@@ -40,15 +43,7 @@
   text-align: center;
 }
 
-header {
 
-  position: relative;
-
-  background-image: url("../public/images/pistol3.jpg");  
-  background-size: cover;
-  color: #d4fb61;  /* Set the text color to be visible against the background */
-  padding: 100px;  /* Adjust padding as needed */
-}
 
 .logo {
   position: absolute;
@@ -58,7 +53,43 @@ header {
   height: auto;
 }
 
+
 h1 {
   font-size: 8em;
   margin-top: 40px;
+}
+
+.Classes {
+  height: 100vh;
+  background-image: url("../public/images/cycling.jpg");  
+  background-size: cover;
+}
+
+
+.AboutMe {
+  font-size: 1.5em;
+}
+
+/* Style for the section containing the links .contactLinks {
+  
+  width: 100%;
+  justify-content: space-around; /* Adjust as needed 
+  align-items: center; 
+  background-color: rgb(163, 191, 210); 
+ 
+  color:rgb(23, 23, 113) ;
+}
+*/
+
+
+.contactLinks{
+  display: flex;
+  padding:20px;
+  justify-content: space-around; 
+  align-items: center; 
+  
+  color:rgb(23, 23, 113) ;
+}
+.contactLinks a{
+  margin-right: 10px;
 }

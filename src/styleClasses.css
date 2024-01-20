@@ -1,0 +1,16 @@
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .buttonContainer a {
+    text-decoration: none;
+    padding: 50px 200px;
+    background-color: rgb(255, 185, 150);
+    color: rgb(230, 280, 183);
+    border-radius: 20px;
+    margin: 0 10px;
+    font-size: 70px;
+  }
+  

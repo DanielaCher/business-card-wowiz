@@ -1,8 +1,19 @@
 import React from 'react';
+
+import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
+import ClasseSection from './ClasseSection';//TODO:??
+import BARRE from './BARRE';
+import Functional from './Functional';
+import HIIT from './HIIT';
+
 import './App.css';
+import './styleClasses.css';
+
 
 function App() {
-  return (
+  return  (
+  <Router>
+
     <div className="App">
       <header className="App-header">
       <h1>W  O  W  I  Z</h1>
@@ -19,75 +30,72 @@ function App() {
 
       <section className="AboutMe">
         <h2>About Me</h2>
-        <p className="Description">Hi, I'm Daniela, a certified fitness trainer 
-        Personal Training
-        Group Classes
-        
-        with a passion for helping people achieve their fitness goals.</p>
+        <ul className="Description">
+          <p>Hello, I'm Daniela.</p>
+          <p>As a former gymnast and dancer, I've transitioned into coaching both individuals and groups.</p>
+          <p>My training sessions encompass Functional, Hiit, and Barre exercises, blending elements from the realms of gymnastics, dance, and yoga.</p>
+          <p>With a passion for movement, I take pleasure in sharing my knowledge and enthusiasm with my trainees.</p>
+          <p>I extend a warm invitation for you to join me on this fitness journey!</p>
+    
+      </ul>
       </section>
-      <section className="Services">
-        <h2>Classes</h2>
-        
-        <ul className="ClassesList">
-        <li>HIIT</li> 
-        <li>FUNCTIONAL </li>
-        <li>BARRE</li> 
-        </ul>
-      </section>
+      <section className="Classes">
+        <ClasseSection />
 
-
-      <section className="Contact">
-        <h2>Contact Us</h2>       
-        <ul className="contactLinks">
-          <li><a
-          className="App-link"
-          href="https://chat.whatsapp.com/KkwPOvyYxJtAVOCTkarVpz"
-          target="_blank"
-          rel="noopener noreferrer"S
-        >
-        Whatsapp Group
-        </a></li>
-
-          <li><a
-          className="App-link"
-          href="https://instagram.com/daniela_chernoguz?igshid=MzMyNGUyNmU2YQ=="
-          target="_blank"
-          rel="noopener noreferrer"S
-        >
-         Instagram
-        </a></li>
-
-          <li><a
-          className="App-link"
-          href="http://onelink.to/sbs5xh"
-          target="_blank"
-          rel="noopener noreferrer"S
-        >
-         Fitter
-        </a></li>
-
-        </ul>
-        </section>
-
-      <section className="Sign Now">
-        <ul>
+      <Routes>
+        <Route path="/BARRE" component={BARRE} />
+        <Route path="/Functional" component={Functional} />
+        <Route path="/HIIT" component={HIIT} />
+      </Routes>
+      <ul>
         <li><a
           className="App-link"
           href="http://onelink.to/sbs5xh"
           target="_blank"
           rel="noopener noreferrer"S
         >
-         Sign Now
+         Sign Now(Schedule)
         </a></li> 
         </ul>
-      </section>
-       
-        
-
-
       
-    </div>
-  );
+      </section>
+      <section className="Contact"> 
+        <h2>Contact Us</h2>  
+
+        <div className="contactLinks">
+          <a 
+          href="https://chat.whatsapp.com/KkwPOvyYxJtAVOCTkarVpz"
+          target="_blank"
+        ><img src=".\images\whatsapp.svg"  alt="WhatsApp Icon" width="80" height="80"/>
+        </a>
+
+          <a
+          href="https://instagram.com/daniela_chernoguz?igshid=MzMyNGUyNmU2YQ=="
+          target="_blank"
+        ><img src=".\images\instagram.svg" alt="Instagram Icon" width="80" height="80"/>
+
+        </a>
+
+          <a
+          href= "https://apps.apple.com/il/app/fitter-group-fitness/id1567774458"
+          target="_blank"
+        ><img src=".\images\calendar-regular.svg" alt="Fitter Icon" width="80" height="80"/>
+        </a>
+        </div>
+        <p>Address: Harav Susu Yosef 5, Beer Sheva</p>
+        <p>Phone: 052-4831152</p>
+        <p>Email: daniela.chernoguz@gmail.com</p>
+      
+      </section>
+    
+
+     
+       
+  
+   
+     </div> 
+    </Router> 
+   );  
 }
 
 export default App;
