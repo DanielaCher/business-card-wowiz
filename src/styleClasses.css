@@ -1,10 +1,11 @@
-
+/* maybe to delete*/
 .buttonContainer {
     display: flex;
     justify-content: space-around;
   }
   
   .buttonContainer a {
+    border: 1px solid rgb(230, 280, 183);
     text-decoration: none;
     padding: 50px 200px;
     background-color: rgb(255, 185, 150);
@@ -12,5 +13,7 @@
     border-radius: 20px;
     margin: 0 10px;
     font-size: 70px;
+    text-shadow: 1px 1px 0 rgb(23, 23, 113), -1px -1px 0 rgb(23, 23, 113), 1px -1px 0 rgb(23, 23, 113), -1px 1px 0 rgb(23, 23, 113); ;;
+   
   }
   

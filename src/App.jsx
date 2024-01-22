@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
-import ClasseSection from './ClasseSection';//TODO:??
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import ClasseSection from './ClasseSection';
 import BARRE from './BARRE';
 import Functional from './Functional';
 import HIIT from './HIIT';
+
 
 import './App.css';
 import './styleClasses.css';
 
 
 function App() {
+
   return  (
   <Router>
 
@@ -29,38 +31,31 @@ function App() {
       
 
       <section className="AboutMe">
-        <h2>About Me</h2>
+        <h2 style={{ color: 'rgba(0, 0, 0, 0)', textShadow: '1px 1px 0 rgb(23, 23, 113)'}}>About Me</h2>
         <ul className="Description">
           <p>Hello, I'm Daniela.</p>
           <p>As a former gymnast and dancer, I've transitioned into coaching both individuals and groups.</p>
           <p>My training sessions encompass Functional, Hiit, and Barre exercises, blending elements from the realms of gymnastics, dance, and yoga.</p>
           <p>With a passion for movement, I take pleasure in sharing my knowledge and enthusiasm with my trainees.</p>
-          <p>I extend a warm invitation for you to join me on this fitness journey!</p>
+          <p>I invite you to join me on this fitness journey!</p>
     
       </ul>
       </section>
       <section className="Classes">
-        <ClasseSection />
+      <ClasseSection  />
 
-      <Routes>
-        <Route path="/BARRE" component={BARRE} />
-        <Route path="/Functional" component={Functional} />
-        <Route path="/HIIT" component={HIIT} />
-      </Routes>
-      <ul>
-        <li><a
-          className="App-link"
-          href="http://onelink.to/sbs5xh"
-          target="_blank"
-          rel="noopener noreferrer"S
-        >
-         Sign Now(Schedule)
-        </a></li> 
-        </ul>
-      
+          <Routes>
+            <Route path="/BARRE" element= {<BARRE/>} />
+            <Route path="/Functional" element= {<Functional/>} />
+            <Route path="/HIIT" element= {<HIIT/>} />
+          </Routes>
+
+          
       </section>
+
+      
       <section className="Contact"> 
-        <h2>Contact Us</h2>  
+        <h2 style={{ color: 'rgb(23, 23, 113)', fontSize: '35px'}}>Contact Us</h2>  
 
         <div className="contactLinks">
           <a 
@@ -87,12 +82,7 @@ function App() {
         <p>Email: daniela.chernoguz@gmail.com</p>
       
       </section>
-    
 
-     
-       
-  
-   
      </div> 
     </Router> 
    );  

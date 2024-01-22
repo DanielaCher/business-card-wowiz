@@ -24,6 +24,7 @@
   color:rgb(230, 280, 183);
   background-image: url("../public/images/pistol3.jpg");  
   background-size: cover;
+  text-shadow: 1px 1px 0 #fff;
    
 }
 
@@ -41,15 +42,16 @@
 }
 .App {
   text-align: center;
+  margin: 0;
 }
 
 
 
 .logo {
   position: absolute;
-  top: 200px;  /* Adjust the top position as needed */
-  left: 20px; /* Adjust the left position as needed */
-  width: 100px;  /* Adjust the width as needed */
+  top: 200px; 
+  left: 20px; 
+  width: 100px; 
   height: auto;
 }
 
@@ -68,6 +70,10 @@ h1 {
 
 .AboutMe {
   font-size: 1.5em;
+}
+
+.classLink:hover {
+  color: rgb(210, 224, 251);
 }
 
 /* Style for the section containing the links .contactLinks {
