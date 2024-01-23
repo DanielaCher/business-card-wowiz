@@ -65,7 +65,7 @@ function App() {
         </a>
 
           <a
-          href="https://instagram.com/daniela_chernoguz?igshid=MzMyNGUyNmU2YQ=="
+          href="https://www.instagram.com/stories/highlights/18163040236270852/"
           target="_blank"
         ><img src=".\images\instagram.svg" alt="Instagram Icon" width="80" height="80"/>
 
