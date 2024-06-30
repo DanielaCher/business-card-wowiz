@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import TrialLessonForm from './TrialLessonForm';
 
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import ClasseSection from './ClasseSection';
 import BARRE from './BARRE';
 import Functional from './Functional';
 import HIIT from './HIIT';
+
 
 
 import './App.css';
@@ -77,7 +79,7 @@ function App() {
         ><img src=".\images\calendar-regular.svg" alt="Fitter Icon" width="80" height="80"/>
         </a>
         </div>
-        <p>Address: Harav Susu Yosef 5, Beer Sheva</p>
+        <p>Address: Harav Susu Yosef 5</p>
         <p>Phone: 052-4831152</p>
         <p>Email: daniela.chernoguz@gmail.com</p>
       

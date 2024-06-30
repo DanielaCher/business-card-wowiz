@@ -24,8 +24,12 @@
   color:rgb(230, 280, 183);
   background-image: url("../public/images/pistol3.jpg");  
   background-size: cover;
-  text-shadow: 1px 1px 0 #fff;
-   
+  text-shadow: 1px 1px 0 #fff; 
+}
+
+.App-header img {
+ 
+  object-position: right center; /* Center the image within its container */
 }
 
 .App-link {
@@ -44,6 +48,7 @@
 body, html {
   margin: 0;
   padding: 0;
+  font-family: 'Times New Roman', sans-serif;
 }
 
 .App {
@@ -73,7 +78,6 @@ h1 {
   background-size: cover;
 }
 
-
 .AboutMe {
   font-size: 1.5em;
 }
@@ -82,18 +86,6 @@ h1 {
   color: rgb(210, 224, 251);
 }
 
-/* Style for the section containing the links .contactLinks {
-  
-  width: 100%;
-  justify-content: space-around; /* Adjust as needed 
-  align-items: center; 
-  background-color: rgb(163, 191, 210); 
- 
-  color:rgb(23, 23, 113) ;
-}
-*/
-
-
 .contactLinks{
   display: flex;
   padding:20px;
@@ -101,7 +93,85 @@ h1 {
   align-items: center; 
   
   color:rgb(23, 23, 113) ;
+  background: 'rgb(230, 280, 183)';
+  /*border: '2px solid rgb(255, 185, 150)' ;*/
+  
 }
 .contactLinks a{
   margin-right: 10px;
 }
+
+/* Style for mobile devices */
+.class-component {
+  width: 100%; /* Take the full width on small screens */
+  padding: 10px; /* Adjust padding as needed */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.component-style {
+  color: rgb(23, 23, 113); 
+  background: rgb(230, 280, 183); 
+  border: 2px solid rgb(255, 185, 150);/* fixed???????? */
+  border-radius: 20px; /* fixed???????? */
+  margin-top: 2%;
+  width: 90%; /* Adjusted for responsiveness */
+  padding: 2% 3%;
+  font-weight: bold;
+  position: relative; /* Adjusted positioning */
+  margin-left: auto;
+  margin-right: auto; /* Center the element horizontally */
+  transform: translateY(10%); /* Adjust vertical position under the button */
+}
+
+/* Style adjustments for small devices (less than 480px) */
+@media (max-width: 479px) {
+  .component-style {
+    padding: 10px; /* Adjusted for smaller screens */
+    font-size: 14px; /* Optional: Adjust font size for smaller screens */
+    width: 100%; /* Use full width for very small devices */
+  }
+}
+
+/* Style for tablets */
+@media (min-width: 768px) {
+  .class-component {
+      width: 50%; /* Take half of the screen width on medium screens */
+      padding: 20px; /* Adjust padding as needed */
+  }
+  .component-style {
+    width: 50%; /* Example for medium screens (tablets) */
+  }
+}
+
+/* Style for desktops */
+@media (min-width: 1024px) {
+  .class-component {
+      width: 33.33%; /* Take a third of the screen width on large screens */
+      padding: 30px; /* Adjust padding as needed */
+  }
+  .component-style {
+    width: 30%; /* Example for large screens (desktops) */
+  }
+  
+}
+
+/* App.css */
+.hidden {
+  display: none;
+}
+
+.buttonContainer button {
+  /* Styling for buttons */
+
+}
+
+
+
+
+.close-button {
+  color: rgb(23, 23, 113);
+  background-color: rgb(230, 280, 183);
+  border: none;
+  cursor: pointer;
+}
+

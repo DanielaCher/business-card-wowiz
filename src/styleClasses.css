@@ -5,17 +5,27 @@
     align-items: center;
   }
   
-  .buttonContainer a {
+  .buttonContainer button {
+    
     border: 1px solid rgb(230, 280, 183);
-    text-decoration: none;
-    width: 30%;
-    padding:6% 13%;
     background-color: rgb(255, 185, 150);
     color: rgb(230, 280, 183);
     border-radius: 20px;
     margin: 0 10px;
     font-size: 3vw;
-    text-shadow: 1px 1px 0 rgb(23, 23, 113), -1px -1px 0 rgb(23, 23, 113), 1px -1px 0 rgb(23, 23, 113), -1px 1px 0 rgb(23, 23, 113); ;;
-   
+    text-shadow: 1px 1px 0 rgb(23, 23, 113), -1px -1px 0 rgb(23, 23, 113), 1px -1px 0 rgb(23, 23, 113), -1px 1px 0 rgb(23, 23, 113);
+
+    width: 30%;
+    padding:6% 13%;
+
+    text-align: center;
+    display: inline-flex; /* Allows for vertical centering of text */
+    justify-content: center; /* Works with inline-flex to center content */
+    align-items: center; /* Vertically centers the text */
+    white-space: nowrap; /* Prevents text from wrapping to a new line */
+    overflow: hidden; /* Keeps the content from spilling out */
+    text-overflow: ellipsis;
+    font-family: 'Times New Roman', sans-serif;
+ 
   }
   
